@@ -443,7 +443,7 @@ class ImapClient
         if ($this->fp === null) {
             return;
         }
-        @fclose($this->fp);
+        fclose($this->fp);
         $this->fp = null;
     }
 
